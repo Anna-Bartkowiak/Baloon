@@ -1,0 +1,67 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-orange: #F04D23;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+h1,
+h2,
+h3,
+ul {
+    font-family: 'Radley', serif;
+}
+
+.navigation__item {
+    font-size: 1rem;
+}
+
+.heading-primary--main {
+    font-size: 12.5rem;
+}
+
+.heading-primary--sub {
+    font-size: 1.125rem;
+}
+
+.heading-secondary {
+    font-size: 2.5rem;
+}
+
+.heading-secondary--big {
+    font-size: 6.25rem;
+}
+
+.paragraph {
+    font-size: 0.875rem;
+}
+
+.paragraph--big {
+    font-size: 1.125rem;
+}
+
+.intro__box,
+.intro__link,
+.contact__link {
+    font-size: 0.9375rem;
+}
+
+.header {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+a,
+h3 {
+    color: var(--color-orange);
+}
