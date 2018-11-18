@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,19 @@
 <body>
     <header class="header">
         <nav class="navigation">
-            <ul class="navigation__item">
-                <li class="navigation__link" id="intro">intro</li>
-                <li class="navigation__link" id="projects">projects</li>
-                <li class="navigation__link" id="about">about me</li>
-                <li class="navigation__link" id="contact">contact</li>
+            <ul class="navigation__box">
+                <li class="navigation__item" id="intro">
+                    <a href="#" class="navigation__link">intro</a>
+                </li>
+                <li class="navigation__item" id="projects">
+                    <a href="#" class="navigation__link">projects</a>
+                </li>
+                <li class="navigation__item" id="about">
+                    <a href="#" class="navigation__link">about me</a>
+                </li>
+                <li class="navigation__item" id="contact">
+                    <a href="#" class="navigation__link">contact</a>
+                </li>
             </ul>
         </nav>
 
@@ -29,56 +37,97 @@
         </div>
     </header>
 
-    <section class="intro">
-        <h2 class="heading-secondary">content & design strategy</h2>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog. Meggings cloud bread cray, 3 wolf moon before they sold out literally normcore retro ennui fam umami letterpress actually distillery vinyl. Wayfarers slow-carb umami VHS. Unicorn activated charcoal fanny pack tbh subway tile knausgaard PBR&B.</p>
-        <h2 class="heading-secondary">the skillset</h2>
-        <ul class="intro__box">
-            <li class="intro__item">design</li>
-            <li class="intro__item">creative strategy</li>
-            <li class="intro__item">brainstorming sessions</li>
-            <li class="intro__item">planning</li>
-            <li class="intro__item">prototyping</li>
-        </ul>
-        <a href="#" class="intro__link">read more on linkedin</a>
+    <div class="container">
+        <div class="row">
+            <section class="intro col-md-6">
+                <h2 class="heading-secondary">content <br>& design strategy</h2>
+                <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo <span class="blog">blog.</span> Meggings cloud bread cray, 3 wolf moon before they sold out literally normcore retro ennui fam umami letterpress actually distillery vinyl. Wayfarers slow-carb umami VHS. Unicorn activated charcoal fanny pack tbh subway tile knausgaard PBR&B.</p>
+        
+                <h2 class="heading-secondary">the skillset</h2>
+                <ul class="intro__box">
+                    <li class="intro__item">design</li>
+                    <li class="intro__item">creative strategy</li>
+                    <li class="intro__item">brainstorming sessions</li>
+                    <li class="intro__item">planning</li>
+                    <li class="intro__item">prototyping</li>
+                </ul>
+        
+                <a href="#" class="intro__link">read more on linkedin</a>
+            </section>
 
-        <img src="img/author.jpg" alt="author">
-        <p class="paragraph">photo by Amy Ferris / Usplash</p>
-    </section>
+            <div class="col-md-5 offset-md-1">
+                <img src="img/author.jpg" alt="author">
+                <p class="paragraph">photo by Amy Ferris / Usplash</p>
+            </div>
+        </div>
 
-    <section class="projects">
-        <h2 class="heading-secondary">projects</h2>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+        <div class="row">
+            <section class="col-md-12">
+                <h2 class="heading-secondary">projects</h2>
+                <p class="paragraph project">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            </section>
+        </div>
 
-        <img src="img/vintage-house.jpg" alt="vintage-house">
-        <h3 class="heading-tertiary">+ the vintage house</h3>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/vintage-house.jpg" alt="vintage-house">
+                <h3 class="heading-tertiary">+ the vintage house</h3>
+                <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            </div>
 
-        <img src="img/colors-of-interior.jpg" alt="colors-of-interior">
-        <h3 class="heading-tertiary">+ colors of interior</h3>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            <div class="col-md-4">
+                <img src="img/colors-of-interior.jpg" alt="colors-of-interior">
+                <h3 class="heading-tertiary">+ colors of interior</h3>
+                <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            </div>
 
-        <h3 class="heading-tertiary">+ the greenery</h3>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            <div class="col-md-4">
+                <h3 class="heading-tertiary">+ the greenery</h3>
+                <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+        
+                <h3 class="heading-tertiary">+ another project</h3>
+                <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+        
+                <h3 class="heading-tertiary">+ and one more</h3>
+                <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            </div>
+        </div>
 
-        <h3 class="heading-tertiary">+ another project</h3>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading-secondary">for more updates follow me on <span class="insta">instagram</span></h2>
+            </div>
+        </div>
 
-        <h3 class="heading-tertiary">+ and one more</h3>
-        <p class="paragraph">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-    </section>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/instagram1.jpg" alt="instagram1">
+            </div>
+            <div class="col-md-3">
+                <img src="img/instagram2.jpg" alt="instagram2">
+            </div>
+            <div class="col-md-3">
+                <img src="img/instagram3.jpg" alt="instagram3">
+            </div>
+            <div class="col-md-3">
+                <img src="img/instagram4.jpg" alt="instagram4">
+            </div>
+        </div>
 
-    <section class="contact">
-        <h2 class="heading-secondary">for more updates follow me on instagram</h2>
-        <img src="img/instagram1.jpg" alt="instagram1">
-        <img src="img/instagram2.jpg" alt="instagram2">
-        <img src="img/instagram3.jpg" alt="instagram3">
-        <img src="img/instagram4.jpg" alt="instagram4">
-        <a href="#" class="contact__link">@thisismyinstagram</a>
+        <div class="row contact__link">
+            <div class="col-md-12">
+                <a href="#">@thisismyinstagram</a>
+            </div>
+        </div>
 
-        <h2 class="heading-secondary heading-secondary--big">let's stay in touch!</h2>
-        <p class="paragraph paragraph--big">write me at contact@theawwwesomes.org <br>or catch me on social media</p>
-    </section>
+        <div class="row">
+            <div class="col-md-12 inTouch">
+                <h2 class="heading-secondary heading-secondary--big">let's stay in touch!</h2>
+                <p class="paragraph paragraph--big">write me at contact@theawwwesomes.org <br>or catch me on social media</p>
+            </div>
+        </div>
+    </div>
+    
 
     <footer>
         <p class="paragraph">#codenovember challenge organised by <a href="#">The Awwwesomes</a> <br> <a href="#">photos are taken fron Unsplash</a> <br> Warsaw, 2018</p>

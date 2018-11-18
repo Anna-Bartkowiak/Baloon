@@ -4,50 +4,109 @@
     --color-orange: #F04D23;
 }
 
-*, 
-*::before, 
-*::after {
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
 body {
     font-family: 'Space Mono', monospace;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-ul {
+h1, h2, h3 {
+    /* line-height: 1; */
+    margin: 0;
     font-family: 'Radley', serif;
+    font-weight: normal;
+}
+
+a {
+    color: var(--color-orange);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #EF6000;
+    width: 100%;
+}
+
+.navigation__box {
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation__item {
-    font-size: 1rem;
+    color: black;
+    margin: 1.5625rem .78rem 1.5625rem .78rem;
+    display: inline-block;
+}
+
+.navigation__link {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.header {
+    height: 80vh;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading-primary--main {
+    line-height: 1;
     font-size: 12.5rem;
+    color: var(--color-white);
+    letter-spacing: 1px;
 }
 
 .heading-primary--sub {
     font-size: 1.125rem;
+    text-transform: lowercase;
+    font-weight: 400;
+    margin: 0;
+    color: var(--color-white);
 }
 
 .heading-secondary {
     font-size: 2.5rem;
+    padding: 3rem 0 1.5rem 0;
 }
 
 .heading-secondary--big {
     font-size: 6.25rem;
 }
 
+.heading-tertiary {
+    color: #FF4907;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
 .paragraph {
     font-size: 0.875rem;
+    text-transform: none;
+    font-weight: 200;
+    line-height: 160%;
 }
 
 .paragraph--big {
     font-size: 1.125rem;
+}
+
+.project {
+    padding-bottom: 1.2rem;
+}
+
+img {
+    width: 100%;
 }
 
 .intro__box,
@@ -56,12 +115,36 @@ ul {
     font-size: 0.9375rem;
 }
 
-.header {
-    background-image: url(../img/banner.jpg);
-    background-position: center;
-    background-size: cover;
+.intro__box {
+    padding: 0;
+    list-style-type: none;
 }
-a,
-h3 {
+
+.intro__item {
+    line-height: 3;
+    border-bottom: 1px solid #D3D3D3;
+    width: 80%;
+}
+
+.insta {
     color: var(--color-orange);
+}
+
+.inTouch {
+    padding: 4rem;
+    text-align: center;
+}
+
+.contact__link {
+    padding-top: 1rem;
+}
+
+footer {
+    padding: 1.2rem;
+    background: #F2F2F2;
+}
+
+footer p {
+    margin: 0;
+    text-align: center; 
 }
