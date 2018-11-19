@@ -8,6 +8,7 @@ body {
     font-family: 'Space Mono', monospace;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 h1, h2, h3 {
@@ -58,6 +59,32 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.header__layout {
+    color: var(--color-white);
+    font-size: .8rem;
+    position: absolute;
+    bottom: 8.5rem;
+    left: -4rem;
+    z-index: 2;
+    transform: rotate(270deg);
+}
+
+.social {
+    position: fixed;
+    bottom: 1rem;
+}
+
+.social__media {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.social__item {
+    width: 2rem;
 }
 
 .heading-primary--main {
@@ -82,6 +109,16 @@ nav {
 
 .heading-secondary--big {
     font-size: 6.25rem;
+    position: relative;
+}
+
+.heading-secondary--big::after {
+    content: url(../img/line.svg);
+    position: absolute;
+    left: 0;
+    bottom: -2rem;;
+    z-index: -1;
+    width: 60rem;
 }
 
 .heading-tertiary {
@@ -124,6 +161,21 @@ img {
     line-height: 3;
     border-bottom: 1px solid #D3D3D3;
     width: 80%;
+}
+
+.cross-after {
+    position: relative;
+    top: 8rem;
+    left: 3rem;
+}
+
+.cross-after::after {
+    content: url(../img/cross.svg);
+    position: absolute;
+    top: -3rem;
+    left: -4rem;
+    z-index: -1;
+    width: 10rem;
 }
 
 .insta {
