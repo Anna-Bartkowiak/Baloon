@@ -20,6 +20,12 @@ h1, h2, h3 {
 
 a {
     color: var(--color-orange);
+    transition: all .3s;
+}
+
+a:hover {
+    background: var(--color-black);
+    color: #fff;
 }
 
 nav {
@@ -66,10 +72,11 @@ nav {
     color: var(--color-white);
     font-size: .8rem;
     position: absolute;
-    bottom: 8.5rem;
-    left: -4rem;
+    bottom: 15px;
+    left: 15px;
     z-index: 2;
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
+    transform-origin: 0 0; 
 }
 
 .social {
@@ -154,11 +161,11 @@ img {
 
 .intro__box {
     padding: 0;
-    list-style-type: none;
+    list-style: none;
 }
 
 .intro__item {
-    line-height: 3;
+    padding: 5px;
     border-bottom: 1px solid #D3D3D3;
     width: 80%;
 }
